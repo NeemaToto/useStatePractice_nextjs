@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-//In this example we will take exampleFive and add a couple logic handling to fix the previous issue with the number.
+//In this example we will take exampleFive and add a couple logic handling to fix the previous issue with the number not changing colour at 2, but three.
 export default function exampleSix() {
     const [number, setNumber] = useState(0);
     const [color, setColor] = useState("gray")
