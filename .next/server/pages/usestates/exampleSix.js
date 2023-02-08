@@ -1,0 +1,56 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/usestates/exampleSix";
+exports.ids = ["pages/usestates/exampleSix"];
+exports.modules = {
+
+/***/ "./pages/usestates/exampleSix.js":
+/*!***************************************!*\
+  !*** ./pages/usestates/exampleSix.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ exampleSix)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n\n\n//In this example we will take exampleFive and add a couple logic handling to fix the previous issue with the number.\nfunction exampleSix() {\n    const [number, setNumber] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0);\n    const [color, setColor] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(\"gray\");\n    const [trigger, setTrigger] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);\n    //Handle is like another function. Only when you actually click on the button \n    //then we're gonna set a color change on the text and background color.\n    //Also remember ()=>{} is another way to write a function\n    const HandleChange = ()=>{\n        if (number == 1) {\n            setColor(\"orange\");\n        }\n    };\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        let interval;\n        //This is saying if trigger is true, proceed\n        if (trigger) {\n            interval = setInterval(()=>{\n                HandleChange();\n                setTrigger(false);\n            }, 3000); //This means in 3 seconds, do something\n        }\n        return ()=>clearInterval(interval) //We do this so it doesn't get confused and keep running\n        ;\n    }, [\n        trigger\n    ]);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                onClick: ()=>{\n                    //This runs so fast it lags the number behind. Thats why we have to click on it three times for orange to appear.\n                    //We need to set a timer so it fixes.\n                    setNumber(number + 1);\n                    //We are replacing handleChange with setTrigger and giving it a true parameter so it goes up to the if statement above and runs trigger.\n                    setTrigger(true);\n                },\n                children: \"Add number\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\neema\\\\Desktop\\\\useStatePractice_nextjs\\\\pages\\\\usestates\\\\exampleSix.js\",\n                lineNumber: 35,\n                columnNumber: 13\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                style: {\n                    color\n                },\n                children: \"Change the text color\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\neema\\\\Desktop\\\\useStatePractice_nextjs\\\\pages\\\\usestates\\\\exampleSix.js\",\n                lineNumber: 44,\n                columnNumber: 13\n            }, this),\n            //color is in quotes because we need it to be in quotes since useState at the top is also in quotes\n            number > 1 && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                style: {\n                    backgroundColor: `${color}`,\n                    lineHeight: 10,\n                    padding: 20\n                },\n                children: \"Box\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\neema\\\\Desktop\\\\useStatePractice_nextjs\\\\pages\\\\usestates\\\\exampleSix.js\",\n                lineNumber: 47,\n                columnNumber: 31\n            }, this),\n            number\n        ]\n    }, void 0, true, {\n        fileName: \"C:\\\\Users\\\\neema\\\\Desktop\\\\useStatePractice_nextjs\\\\pages\\\\usestates\\\\exampleSix.js\",\n        lineNumber: 31,\n        columnNumber: 9\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy91c2VzdGF0ZXMvZXhhbXBsZVNpeC5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBMkM7QUFFM0MscUhBQXFIO0FBQ3RHLFNBQVNFLGFBQWE7SUFDakMsTUFBTSxDQUFDQyxRQUFRQyxVQUFVLEdBQUdKLCtDQUFRQSxDQUFDO0lBQ3JDLE1BQU0sQ0FBQ0ssT0FBT0MsU0FBUyxHQUFHTiwrQ0FBUUEsQ0FBQztJQUNuQyxNQUFNLENBQUNPLFNBQVNDLFdBQVcsR0FBR1IsK0NBQVFBLENBQUMsS0FBSztJQUM1Qyw4RUFBOEU7SUFDOUUsdUVBQXVFO0lBQ3ZFLHlEQUF5RDtJQUN6RCxNQUFNUyxlQUFlLElBQU07UUFDdkIsSUFBSU4sVUFBVSxHQUFHO1lBQ2JHLFNBQVM7UUFDYixDQUFDO0lBQ0w7SUFFQUwsZ0RBQVNBLENBQUMsSUFBSTtRQUNWLElBQUlTO1FBRUosNENBQTRDO1FBQzVDLElBQUdILFNBQVE7WUFDUEcsV0FBV0MsWUFBWSxJQUFJO2dCQUN2QkY7Z0JBQ0FELFdBQVcsS0FBSztZQUNwQixHQUFHLE9BQU8sdUNBQXVDO1FBQ3JELENBQUM7UUFDRCxPQUFNLElBQUtJLGNBQWNGLFVBQVUsd0RBQXdEOztJQUMvRixHQUFHO1FBQUNIO0tBQVE7SUFFWixxQkFDSSw4REFBQ007OzBCQUlHLDhEQUFDQztnQkFBT0MsU0FBUyxJQUFNO29CQUNuQixpSEFBaUg7b0JBQ2pILHFDQUFxQztvQkFDckNYLFVBQVVELFNBQVM7b0JBQ25CLHdJQUF3STtvQkFDeElLLFdBQVcsSUFBSTtnQkFDbkI7MEJBQUc7Ozs7OzswQkFHSCw4REFBQ1E7Z0JBQUdDLE9BQU87b0JBQUVaO2dCQUFNOzBCQUFHOzs7Ozs7WUFFbEIsbUdBQW1HO1lBQ25HRixTQUFTLG1CQUFLLDhEQUFDVTtnQkFBSUksT0FBTztvQkFBRUMsaUJBQWlCLENBQUMsRUFBRWIsTUFBTSxDQUFDO29CQUFFYyxZQUFZO29CQUFJQyxTQUFTO2dCQUFHOzBCQUFHOzs7Ozs7WUFJM0ZqQjs7Ozs7OztBQUdiLENBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly91c2Utc3RhdGUtcHJhY3RpY2UwMS8uL3BhZ2VzL3VzZXN0YXRlcy9leGFtcGxlU2l4LmpzPzE5OTAiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCB9IGZyb20gJ3JlYWN0J1xyXG5cclxuLy9JbiB0aGlzIGV4YW1wbGUgd2Ugd2lsbCB0YWtlIGV4YW1wbGVGaXZlIGFuZCBhZGQgYSBjb3VwbGUgbG9naWMgaGFuZGxpbmcgdG8gZml4IHRoZSBwcmV2aW91cyBpc3N1ZSB3aXRoIHRoZSBudW1iZXIuXHJcbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIGV4YW1wbGVTaXgoKSB7XHJcbiAgICBjb25zdCBbbnVtYmVyLCBzZXROdW1iZXJdID0gdXNlU3RhdGUoMCk7XHJcbiAgICBjb25zdCBbY29sb3IsIHNldENvbG9yXSA9IHVzZVN0YXRlKFwiZ3JheVwiKVxyXG4gICAgY29uc3QgW3RyaWdnZXIsIHNldFRyaWdnZXJdID0gdXNlU3RhdGUoZmFsc2UpXHJcbiAgICAvL0hhbmRsZSBpcyBsaWtlIGFub3RoZXIgZnVuY3Rpb24uIE9ubHkgd2hlbiB5b3UgYWN0dWFsbHkgY2xpY2sgb24gdGhlIGJ1dHRvbiBcclxuICAgIC8vdGhlbiB3ZSdyZSBnb25uYSBzZXQgYSBjb2xvciBjaGFuZ2Ugb24gdGhlIHRleHQgYW5kIGJhY2tncm91bmQgY29sb3IuXHJcbiAgICAvL0Fsc28gcmVtZW1iZXIgKCk9Pnt9IGlzIGFub3RoZXIgd2F5IHRvIHdyaXRlIGEgZnVuY3Rpb25cclxuICAgIGNvbnN0IEhhbmRsZUNoYW5nZSA9ICgpID0+IHtcclxuICAgICAgICBpZiAobnVtYmVyID09IDEpIHtcclxuICAgICAgICAgICAgc2V0Q29sb3IoXCJvcmFuZ2VcIilcclxuICAgICAgICB9XHJcbiAgICB9XHJcbiAgICBcclxuICAgIHVzZUVmZmVjdCgoKT0+e1xyXG4gICAgICAgIGxldCBpbnRlcnZhbDtcclxuICAgICAgICBcclxuICAgICAgICAvL1RoaXMgaXMgc2F5aW5nIGlmIHRyaWdnZXIgaXMgdHJ1ZSwgcHJvY2VlZFxyXG4gICAgICAgIGlmKHRyaWdnZXIpe1xyXG4gICAgICAgICAgICBpbnRlcnZhbCA9IHNldEludGVydmFsKCgpPT57XHJcbiAgICAgICAgICAgICAgICBIYW5kbGVDaGFuZ2UoKVxyXG4gICAgICAgICAgICAgICAgc2V0VHJpZ2dlcihmYWxzZSlcclxuICAgICAgICAgICAgfSwgMzAwMCk7IC8vVGhpcyBtZWFucyBpbiAzIHNlY29uZHMsIGRvIHNvbWV0aGluZ1xyXG4gICAgICAgIH1cclxuICAgICAgICByZXR1cm4oKT0+IGNsZWFySW50ZXJ2YWwoaW50ZXJ2YWwpIC8vV2UgZG8gdGhpcyBzbyBpdCBkb2Vzbid0IGdldCBjb25mdXNlZCBhbmQga2VlcCBydW5uaW5nXHJcbiAgICB9LCBbdHJpZ2dlcl0pXHJcblxyXG4gICAgcmV0dXJuIChcclxuICAgICAgICA8ZGl2PlxyXG4gICAgICAgICAgICB7LyogQWRkaW5nIGFuIGV4dHJhIGN1cmx5IGJyYWNlIGJyYWNrZXRzIGFmdGVyIHRoZSBhcnJvdyBiZWNhdXNlIHRoaXMgb25DbGljayBpc1xyXG4gICAgICAgICAgICBnb2luZyB0byBoYXZlIGV4dHJhIGZ1bmN0aW9uYWxpdGllcy4gSWYgdGhlcmUgd2FzIG9ubHkgb25lLCB0aGVuIHRoZSBjdXJseSBicmFja2V0c1xyXG4gICAgICAgICAgICB3b3VsZCBub3QgYmUgbmVjZXNzYXJ5LiAgKi99XHJcbiAgICAgICAgICAgIDxidXR0b24gb25DbGljaz17KCkgPT4ge1xyXG4gICAgICAgICAgICAgICAgLy9UaGlzIHJ1bnMgc28gZmFzdCBpdCBsYWdzIHRoZSBudW1iZXIgYmVoaW5kLiBUaGF0cyB3aHkgd2UgaGF2ZSB0byBjbGljayBvbiBpdCB0aHJlZSB0aW1lcyBmb3Igb3JhbmdlIHRvIGFwcGVhci5cclxuICAgICAgICAgICAgICAgIC8vV2UgbmVlZCB0byBzZXQgYSB0aW1lciBzbyBpdCBmaXhlcy5cclxuICAgICAgICAgICAgICAgIHNldE51bWJlcihudW1iZXIgKyAxKVxyXG4gICAgICAgICAgICAgICAgLy9XZSBhcmUgcmVwbGFjaW5nIGhhbmRsZUNoYW5nZSB3aXRoIHNldFRyaWdnZXIgYW5kIGdpdmluZyBpdCBhIHRydWUgcGFyYW1ldGVyIHNvIGl0IGdvZXMgdXAgdG8gdGhlIGlmIHN0YXRlbWVudCBhYm92ZSBhbmQgcnVucyB0cmlnZ2VyLlxyXG4gICAgICAgICAgICAgICAgc2V0VHJpZ2dlcih0cnVlKVxyXG4gICAgICAgICAgICB9fT5cclxuICAgICAgICAgICAgICAgIEFkZCBudW1iZXJcclxuICAgICAgICAgICAgPC9idXR0b24+XHJcbiAgICAgICAgICAgIDxoMSBzdHlsZT17eyBjb2xvciB9fT5DaGFuZ2UgdGhlIHRleHQgY29sb3I8L2gxPlxyXG4gICAgICAgICAgICB7XHJcbiAgICAgICAgICAgICAgICAvL2NvbG9yIGlzIGluIHF1b3RlcyBiZWNhdXNlIHdlIG5lZWQgaXQgdG8gYmUgaW4gcXVvdGVzIHNpbmNlIHVzZVN0YXRlIGF0IHRoZSB0b3AgaXMgYWxzbyBpbiBxdW90ZXNcclxuICAgICAgICAgICAgICAgIG51bWJlciA+IDEgJiYgPGRpdiBzdHlsZT17eyBiYWNrZ3JvdW5kQ29sb3I6IGAke2NvbG9yfWAsIGxpbmVIZWlnaHQ6IDEwLCBwYWRkaW5nOiAyMCB9fT5cclxuICAgICAgICAgICAgICAgICAgICBCb3hcclxuICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIHtudW1iZXJ9XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICApXHJcbn0iXSwibmFtZXMiOlsidXNlU3RhdGUiLCJ1c2VFZmZlY3QiLCJleGFtcGxlU2l4IiwibnVtYmVyIiwic2V0TnVtYmVyIiwiY29sb3IiLCJzZXRDb2xvciIsInRyaWdnZXIiLCJzZXRUcmlnZ2VyIiwiSGFuZGxlQ2hhbmdlIiwiaW50ZXJ2YWwiLCJzZXRJbnRlcnZhbCIsImNsZWFySW50ZXJ2YWwiLCJkaXYiLCJidXR0b24iLCJvbkNsaWNrIiwiaDEiLCJzdHlsZSIsImJhY2tncm91bmRDb2xvciIsImxpbmVIZWlnaHQiLCJwYWRkaW5nIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/usestates/exampleSix.js\n");
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
+/***/ ((module) => {
+
+module.exports = require("react");
+
+/***/ }),
+
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/***/ ((module) => {
+
+module.exports = require("react/jsx-dev-runtime");
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__("./pages/usestates/exampleSix.js"));
+module.exports = __webpack_exports__;
+
+})();
